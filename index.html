@@ -315,6 +315,20 @@
             color: #666;
         }
 
+        .project-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #6366f1;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .project-link:hover {
+            color: #4f46e5;
+            transform: translateX(5px);
+        }
+
         .quote-card {
             background: #ffffff;
             padding: 3rem;
@@ -361,8 +375,63 @@
             border-top: 1px solid #e0e0e0;
         }
 
+        footer h2 {
+            margin-bottom: 2rem;
+        }
+
+        .contact-grid {
+            max-width: 900px;
+            margin: 0 auto 3rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .contact-item {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(99, 102, 241, 0.1);
+            border-color: #6366f1;
+        }
+
+        .contact-item h3 {
+            font-size: 1.1rem;
+            color: #111;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item a {
+            color: #6366f1;
+            text-decoration: none;
+            font-weight: 500;
+            word-break: break-all;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-item p {
+            color: #666;
+            margin: 0;
+        }
+
         footer p {
             color: #999;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
         }
 
         @media (max-width: 968px) {
@@ -444,6 +513,7 @@
                     <h3>College Game Jam</h3>
                     <p class="year">2024</p>
                     <p style="margin-top: 1rem; color: #666;">Participated in game development competition, collaborating with team members to create an engaging gaming experience under time constraints.</p>
+                    <a href="https://bridge-war-first-aid.lovable.app/" target="_blank" class="project-link">Play Game →</a>
                 </div>
             </div>
             <div class="work-card">
@@ -454,6 +524,17 @@
                     <h3>Personal Portfolio Website</h3>
                     <p class="year">2024</p>
                     <p style="margin-top: 1rem; color: #666;">Built this responsive portfolio website from scratch using HTML and CSS to showcase my journey and skills.</p>
+                </div>
+            </div>
+            <div class="work-card">
+                <div class="card-img" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                    <span>Poster Business</span>
+                </div>
+                <div class="card-content">
+                    <h3>Online Poster Store</h3>
+                    <p class="year">2024 - In Progress</p>
+                    <p style="margin-top: 1rem; color: #666;">Launching an e-commerce platform for custom posters and wall art. Currently building the online store and curating design collections.</p>
+                    <a href="https://my-site-5n6ptl3s-gaharwarrajeev16.wix-vibe.com/" target="_blank" class="project-link">Visit Store →</a>
                 </div>
             </div>
             <div class="work-card">
@@ -533,7 +614,7 @@
                 <p>In E-Cell business challenge</p>
             </div>
             <div class="stat-box">
-                <h2>3+</h2>
+                <h2>4+</h2>
                 <h3>Projects</h3>
                 <p>And counting...</p>
             </div>
@@ -572,7 +653,21 @@
     </section>
 
     <footer id="contact">
-        <h2 style="margin-bottom: 1rem;">Let's Connect</h2>
+        <h2>Let's Connect</h2>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <h3>Email</h3>
+                <a href="mailto:anshul.sancheti007@gmail.com">anshul.sancheti007@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <h3>Phone</h3>
+                <a href="tel:+917019554929">+91 7019554929</a>
+            </div>
+            <div class="contact-item">
+                <h3>GitHub</h3>
+                <a href="https://github.com/AnshulSancheti" target="_blank">github.com/AnshulSancheti</a>
+            </div>
+        </div>
         <p>© 2024 Anshul Jain. All rights reserved.</p>
     </footer>
 </body>
